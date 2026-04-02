@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoadMate AI — Your Voice Co-Pilot for Real Estate</title>
+  <meta name="description" content="RoadMate is the AI voice co-pilot built for real estate agents on the go. Schedule showings, query MLS, draft contracts, and manage clients — all by voice from your phone.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://www.roadmate.ai">
+  <meta property="og:title"       content="RoadMate AI — Your Voice Co-Pilot for Real Estate">
+  <meta property="og:description" content="Close deals, schedule showings, query MLS, and draft contracts — all by voice, all on the go.">
+  <meta property="og:image"       content="assets/roadmate_logo.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="RoadMate AI — Your Voice Co-Pilot for Real Estate">
+  <meta name="twitter:description" content="Close deals, schedule showings, query MLS, and draft contracts — all by voice, all on the go.">
+
+  <link rel="icon" type="image/png" href="assets/roadmate_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ================================================
+     NAV
+     ================================================ -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">
+      <img src="assets/roadmate_logo.png" alt="RoadMate logo">
+      <span>RoadMate</span>
+    </a>
+    <div class="nav__links">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#demo">Demo</a>
+    </div>
+    <a href="#waitlist" class="btn btn--primary btn--sm">Join Waitlist</a>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav__mobile" id="nav-mobile">
+  <a href="#features"    onclick="closeMobileNav()">Features</a>
+  <a href="#how-it-works" onclick="closeMobileNav()">How It Works</a>
+  <a href="#demo"        onclick="closeMobileNav()">Demo</a>
+  <a href="#waitlist" class="btn btn--primary btn--sm btn--full" onclick="closeMobileNav()">Join Waitlist</a>
+</div>
+
+<!-- ================================================
+     HERO
+     ================================================ -->
+<section class="hero" id="home">
+  <div class="container hero__inner">
+
+    <!-- Left: Content -->
+    <div class="hero__content">
+
+      <div class="hero__badge">
+        <div class="badge-wave">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        Voice AI for Realtors
+      </div>
+
+      <h1 class="hero__title">
+        Your AI Co-Pilot<br>
+        <span class="gradient-text">for Real Estate</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Close deals, schedule showings, query MLS, and draft contracts —
+        all by voice, all from your phone. Built for realtors who never stop moving.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#waitlist" class="btn btn--primary btn--lg">
+          Get Early Access
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#how-it-works" class="btn btn--ghost btn--lg">
+          See How It Works
+        </a>
+      </div>
+
+      <div class="hero__meta">
+        <div class="hero__platforms">
+          <span class="platform-badge">
+            <!-- iOS icon -->
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            iOS
+          </span>
+          <span class="platform-badge">
+            <!-- Android icon -->
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"/></svg>
+            Android
+          </span>
+        </div>
+        <div class="hero__meta-dot"></div>
+        <span>Early Access Q3 2026</span>
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="hero__visual">
+      <!-- Pulsing rings -->
+      <div class="ring ring--1"></div>
+      <div class="ring ring--2"></div>
+      <div class="ring ring--3"></div>
+
+      <!-- Phone mockup -->
+      <div class="phone-mockup">
+        <img src="assets/roadmate_screenshot.png" alt="RoadMate app interface">
+      </div>
+
+      <!-- Floating command bubbles -->
+      <div class="voice-bubble voice-bubble--1">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+        "Schedule showing for the Johnsons"
+      </div>
+      <div class="voice-bubble voice-bubble--2">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+        "MLS price on 123 Oak St?"
+      </div>
+      <div class="voice-bubble voice-bubble--3">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+        "Draft the Williams offer"
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================================
+     PAIN POINTS
+     ================================================ -->
+<section class="pain-points">
+  <div class="container">
+    <div class="pain-points__grid">
+
+      <div class="pain-point reveal">
+        <div class="pain-point__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <div>
+          <strong>Always driving, never at a desk</strong>
+          <span>Your office is your car. Your tools should work the same way.</span>
+        </div>
+      </div>
+
+      <div class="pain-point reveal reveal-delay-2">
+        <div class="pain-point__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <strong>Admin is eating your commissions</strong>
+          <span>Every minute on scheduling and paperwork is a minute not closing deals.</span>
+        </div>
+      </div>
+
+      <div class="pain-point reveal reveal-delay-3">
+        <div class="pain-point__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div>
+          <strong>MLS on mobile is a pain</strong>
+          <span>Looking up listings and comps while parked shouldn't take 10 taps.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FEATURES
+     ================================================ -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Capabilities</span>
+      <h2>Everything a realtor needs,<br>powered by voice</h2>
+      <p>Six core capabilities that let you work smarter from anywhere — no keyboard required.</p>
+    </div>
+
+    <div class="features__grid">
+
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+        </div>
+        <h3>Voice Scheduling</h3>
+        <p>Book showings, set client appointments, and sync your calendar — just by saying it. No typing, no tapping.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94M14.05 6A5 5 0 0 1 18 10"/></svg>
+        </div>
+        <h3>Client Calls &amp; Texts</h3>
+        <p>Call or message any contact hands-free. RoadMate drafts smart replies and follow-ups you approve in seconds.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3>MLS Instant Lookup</h3>
+        <p>Ask for any listing, price, or comparable by voice. Pull property details and market data on demand.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h3>Contract Drafting</h3>
+        <p>Dictate and draft offers, addenda, and follow-up emails in seconds. Ready to review and send before you reach the office.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><circle cx="12" cy="12" r="10"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h3>Deal Memory</h3>
+        <p>RoadMate remembers your clients, open transactions, and preferences across every session — like a true co-pilot.</p>
+      </div>
+
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-card__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h3>iOS &amp; Android Native</h3>
+        <p>Runs natively on your phone. No browser workarounds, no special hardware. Just tap, speak, and go.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     HOW IT WORKS
+     ================================================ -->
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">How It Works</span>
+      <h2>Three words:<br><span class="gradient-text">Tap. Speak. Done.</span></h2>
+      <p>RoadMate turns your voice into action. Here's how it works from co-pilot to co-closer.</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step reveal reveal-delay-1">
+        <div class="step__number">1</div>
+        <div class="step__body">
+          <h3>Tap &amp; Speak</h3>
+          <p>Open RoadMate and say what you need. It's always ready — no setup, no menu navigation, just your voice.</p>
+        </div>
+      </div>
+
+      <div class="step reveal reveal-delay-2">
+        <div class="step__number">2</div>
+        <div class="step__body">
+          <h3>AI Takes Action</h3>
+          <p>Your co-pilot connects to your calendar, contacts, MLS data, and more — processing your request in real time.</p>
+        </div>
+      </div>
+
+      <div class="step reveal reveal-delay-3">
+        <div class="step__number">3</div>
+        <div class="step__body">
+          <h3>It's Done — Move On</h3>
+          <p>Meeting booked. Client texted. Offer drafted. All while you drive to your next showing, hands on the wheel.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     DEMO
+     ================================================ -->
+<section class="demo" id="demo">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Demo</span>
+      <h2>See RoadMate in Action</h2>
+      <p>Watch how a realtor manages a full day of client activity without touching a keyboard.</p>
+    </div>
+
+    <div class="demo__placeholder reveal">
+      <div class="demo__play-btn">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      </div>
+      <p class="demo__label">Demo video coming soon</p>
+      <div class="demo__coming-soon">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Join the waitlist for early access
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     WAITLIST
+     ================================================ -->
+<section class="waitlist" id="waitlist">
+  <div class="container">
+    <div class="waitlist__inner">
+
+      <!-- Left: Pitch -->
+      <div class="waitlist__content reveal">
+        <span class="section-tag">Early Access</span>
+        <h2>Be first on<br>the tarmac</h2>
+        <p>
+          We're rolling out market by market. Join the waitlist and get access
+          the moment RoadMate launches in your area.
+        </p>
+        <ul class="waitlist__perks">
+          <li>
+            <div class="perk-check">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            First to access new features
+          </li>
+          <li>
+            <div class="perk-check">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Priority onboarding support
+          </li>
+          <li>
+            <div class="perk-check">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Founding member pricing
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="reveal reveal-delay-2">
+        <!--
+          SETUP REQUIRED:
+          1. Go to https://formspree.io and create a free account
+          2. Create a new form and set the "Email" to: waitlist@roadmate.ai
+          3. Copy your form endpoint (looks like: https://formspree.io/f/xabc1234)
+          4. Replace action="#" below with your Formspree endpoint URL
+        -->
+        <form class="waitlist__form" id="waitlist-form" action="#" method="POST">
+          <!-- Formspree configuration -->
+          <input type="hidden" name="_subject" value="New RoadMate Waitlist Signup">
+          <input type="text"   name="_gotcha"  style="display:none" tabindex="-1" autocomplete="off">
+
+          <div id="form-error" class="form-error" style="display:none">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Something went wrong. Please try again or email us at <a href="mailto:waitlist@roadmate.ai" style="color:inherit;text-decoration:underline">waitlist@roadmate.ai</a>.
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first_name">First Name <span style="color:#EF4444">*</span></label>
+              <input type="text" id="first_name" name="first_name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name <span style="color:#EF4444">*</span></label>
+              <input type="text" id="last_name" name="last_name" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span style="color:#EF4444">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jane@kw.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="role">Your Role <span style="color:#EF4444">*</span></label>
+            <select id="role" name="role" required>
+              <option value="">Select your role...</option>
+              <option value="agent">Real Estate Agent</option>
+              <option value="broker">Broker / Broker-Owner</option>
+              <option value="team_lead">Team Lead</option>
+              <option value="tc">Transaction Coordinator</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="brokerage">Brokerage / Company <span style="color:#EF4444">*</span></label>
+            <input type="text" id="brokerage" name="brokerage" placeholder="e.g. Keller Williams, Compass, eXp" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="market">Market / City <span style="color:#EF4444">*</span></label>
+              <input type="text" id="market" name="market" placeholder="e.g. Miami, FL" required>
+            </div>
+            <div class="form-group">
+              <label for="team_size">Team Size</label>
+              <select id="team_size" name="team_size">
+                <option value="">Select...</option>
+                <option value="solo">Just me</option>
+                <option value="2-5">2–5 agents</option>
+                <option value="6-20">6–20 agents</option>
+                <option value="20+">20+ agents</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--full" id="submit-btn">
+            <span id="btn-text">Request Early Access</span>
+            <span id="btn-loading" style="display:none">Sending...</span>
+          </button>
+          <p class="form-note">No spam, ever. We'll only reach out when it's time to onboard your market.</p>
+        </form>
+
+        <!-- Success state (hidden until form submitted) -->
+        <div class="waitlist__form waitlist__success" id="waitlist-success" style="display:none">
+          <div class="success-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>You're on the list!</h3>
+          <p>We'll reach out as soon as RoadMate launches in your market. Keep closing.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FOOTER
+     ================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo">
+          <img src="assets/roadmate_logo.png" alt="RoadMate logo">
+          <span>RoadMate</span>
+        </a>
+        <p>Your AI co-pilot for real estate.<br>Close more, drive smarter.</p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#demo">Demo</a>
+          <a href="#waitlist">Join Waitlist</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@roadmate.ai">hello@roadmate.ai</a>
+          <a href="mailto:waitlist@roadmate.ai">waitlist@roadmate.ai</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 RoadMate AI. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
