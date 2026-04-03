@@ -13,6 +13,7 @@ function doPost(e) {
     const role       = data.role        || '';
     const brokerage  = data.brokerage   || '';
     const market     = data.market      || '';
+    const crm        = data.crm         || 'Not specified';
     const teamSize   = data.team_size   || 'Not specified';
 
     if (!email || !firstName || !lastName) {
@@ -29,6 +30,7 @@ Email:       ${email}
 Role:        ${role}
 Brokerage:   ${brokerage}
 Market:      ${market}
+CRM:         ${crm}
 Team Size:   ${teamSize}
 ─────────────────────────────
 Reply directly to this email to contact them.
@@ -64,7 +66,7 @@ function logToSheet(data) {
       sheet.setName('Waitlist');
       sheet.appendRow([
         'Timestamp', 'First Name', 'Last Name', 'Email',
-        'Role', 'Brokerage', 'Market', 'Team Size'
+        'Role', 'Brokerage', 'Market', 'CRM', 'Team Size'
       ]);
     }
 
@@ -77,6 +79,7 @@ function logToSheet(data) {
       data.role        || '',
       data.brokerage   || '',
       data.market      || '',
+      data.crm         || '',
       data.team_size   || ''
     ]);
   } catch (err) {
