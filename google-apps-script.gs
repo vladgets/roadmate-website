@@ -12,7 +12,10 @@ function doPost(e) {
     const email      = data.email       || '';
     const role       = data.role        || '';
     const brokerage  = data.brokerage   || '';
-    const market     = data.market      || '';
+    const city       = data.city        || '';
+    const state      = data.state       || '';
+    const country    = data.country     || '';
+    const market     = [city, state, country].filter(Boolean).join(', ');
     const crm        = data.crm         || 'Not specified';
     const teamSize   = data.team_size   || 'Not specified';
 
@@ -66,7 +69,7 @@ function logToSheet(data) {
       sheet.setName('Waitlist');
       sheet.appendRow([
         'Timestamp', 'First Name', 'Last Name', 'Email',
-        'Role', 'Brokerage', 'Market', 'CRM', 'Team Size'
+        'Role', 'Brokerage', 'City', 'State', 'Country', 'CRM', 'Team Size'
       ]);
     }
 
@@ -78,7 +81,9 @@ function logToSheet(data) {
       data.email       || '',
       data.role        || '',
       data.brokerage   || '',
-      data.market      || '',
+      data.city        || '',
+      data.state       || '',
+      data.country     || '',
       data.crm         || '',
       data.team_size   || ''
     ]);

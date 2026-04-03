@@ -44,6 +44,17 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   });
 });
 
+/* --- State field visibility (show only for US/Canada) --- */
+function toggleState(country) {
+  const stateGroup = document.getElementById('state-group');
+  const stateInput = document.getElementById('state');
+  const showState  = country === 'US' || country === 'CA';
+  stateGroup.style.display = showState ? '' : 'none';
+  stateInput.required      = false; // state is never required
+}
+// Hide state initially if country is not US/CA
+toggleState(document.getElementById('country')?.value || 'US');
+
 /* --- Scroll reveal (IntersectionObserver) --- */
 const revealObserver = new IntersectionObserver(
   (entries) => {
