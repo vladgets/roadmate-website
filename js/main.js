@@ -115,4 +115,12 @@ function showSuccess() {
   form.style.display       = 'none';
   successBox.style.display = 'block';
   successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+  // Fire GA4 conversion event
+  if (typeof gtag === 'function') {
+    gtag('event', 'waitlist_signup', {
+      event_category: 'engagement',
+      event_label: 'Waitlist Form Submitted'
+    });
+  }
 }
